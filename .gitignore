@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.env.example
+client.err.log
+client.log
+pnpm-lock.yaml
+pnpm-workspace.yaml
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.DS_Store

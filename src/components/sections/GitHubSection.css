@@ -1,0 +1,82 @@
+.github-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 22px;
+}
+
+.github-profile,
+.github-repos,
+.github-graph {
+  padding: 26px;
+}
+
+.github-profile svg {
+  color: var(--accent);
+  font-size: 2rem;
+}
+
+.github-profile h3,
+.github-repos h3,
+.github-graph h3 {
+  margin: 16px 0;
+  font-weight: 800;
+}
+
+.github-stats {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.github-stats span,
+.github-repos a span {
+  color: var(--text-secondary);
+}
+
+.github-repos {
+  display: grid;
+  gap: 12px;
+}
+
+.github-repos a {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.github-repos a strong,
+.github-repos a span {
+  display: block;
+}
+
+.github-graph {
+  grid-column: 1 / -1;
+}
+
+.contribution-grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 7px;
+}
+
+.contribution-grid span {
+  aspect-ratio: 1;
+  border-radius: 4px;
+  background: var(--border);
+}
+
+.contribution-grid .level-1 { background: color-mix(in srgb, var(--accent) 28%, var(--border)); }
+.contribution-grid .level-2 { background: color-mix(in srgb, var(--accent) 48%, var(--border)); }
+.contribution-grid .level-3 { background: color-mix(in srgb, var(--accent) 68%, var(--border)); }
+.contribution-grid .level-4 { background: var(--accent); }
+
+@media (max-width: 767px) {
+  .github-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contribution-grid {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}

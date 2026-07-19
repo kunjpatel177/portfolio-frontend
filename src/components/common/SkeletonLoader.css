@@ -1,0 +1,30 @@
+.skeleton-list {
+  display: grid;
+  gap: 16px;
+}
+
+.skeleton-card {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+.skeleton-card span,
+.skeleton-card strong,
+.skeleton-card em {
+  display: block;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--border), var(--bg-secondary), var(--border));
+  background-size: 220% 100%;
+  animation: shimmer 1.35s infinite;
+}
+
+.skeleton-card span { width: 34%; }
+.skeleton-card strong { width: 82%; margin-top: 18px; }
+.skeleton-card em { width: 58%; margin-top: 12px; }
+
+@keyframes shimmer {
+  to { background-position-x: -220%; }
+}

@@ -1,0 +1,9 @@
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  height: 3px;
+  background: var(--accent);
+  transition: width 0.15s ease;
+}

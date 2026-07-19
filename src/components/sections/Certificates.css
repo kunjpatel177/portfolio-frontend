@@ -1,0 +1,26 @@
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.certificate-card {
+  padding: 28px;
+}
+
+.certificate-card svg {
+  color: var(--accent);
+  font-size: 1.7rem;
+}
+
+.certificate-card h3 {
+  margin: 18px 0 0;
+  font-weight: 800;
+  font-size: 1.08rem;
+}
+
+@media (max-width: 767px) {
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+}

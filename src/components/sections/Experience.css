@@ -1,0 +1,41 @@
+.timeline {
+  position: relative;
+  max-width: 860px;
+  padding-left: 28px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 8px;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  padding: 28px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 28px;
+  left: -28px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 6px var(--bg);
+}
+
+.timeline-item h3 {
+  font-weight: 800;
+}
+
+.timeline-meta,
+.timeline-item li {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}

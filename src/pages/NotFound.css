@@ -1,0 +1,23 @@
+.not-found {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: var(--bg-secondary);
+}
+
+.not-found-card {
+  max-width: 520px;
+  padding: 42px;
+  text-align: center;
+}
+
+.not-found-card span {
+  color: var(--accent);
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.not-found-card p {
+  color: var(--text-secondary);
+}
